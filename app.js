@@ -13,7 +13,7 @@ const defaultData = {
         { id: 4, name: 'Sameen Shaw', role: 'DevOps Engineer', email: 'shaw@devteam.io', avatar: 'SS' }
     ],
     projects: [
-        { id: 1, name: 'Website Redesign', description: 'Overhaul of the corporate website.', status: 'Active', deadline: '2023-12-31' },
+        { id: 1, name: 'App design Redesign', description: 'Overhaul of the corporate website.', status: 'Active', deadline: '2023-12-31' },
         { id: 2, name: 'Mobile App Beta', description: 'First release of the iOS app.', status: 'In Progress', deadline: '2023-11-15' },
         { id: 3, name: 'API Migration', description: 'Migrate legacy API to GraphQL.', status: 'Planning', deadline: '2024-02-20' }
     ],
