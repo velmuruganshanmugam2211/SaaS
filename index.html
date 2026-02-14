@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTeam | Team Management SaaS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="logo-icon"><ion-icon name="layers"></ion-icon></div>
+                <h1>DevTeam</h1>
+            </div>
+            
+            <nav class="nav-menu">
+                <button class="nav-item active" data-view="dashboard">
+                    <ion-icon name="grid-outline"></ion-icon>
+                    <span>Dashboard</span>
+                </button>
+                <button class="nav-item" data-view="projects">
+                    <ion-icon name="folder-open-outline"></ion-icon>
+                    <span>Projects</span>
+                </button>
+                <button class="nav-item" data-view="tasks">
+                    <ion-icon name="checkbox-outline"></ion-icon>
+                    <span>Tasks</span>
+                </button>
+                <button class="nav-item" data-view="team">
+                    <ion-icon name="people-outline"></ion-icon>
+                    <span>Team</span>
+                </button>
+            </nav>
+
+            <div class="user-profile-mini">
+                <div class="avatar">AD</div>
+                <div class="user-info">
+                    <span class="name">Admin User</span>
+                    <span class="role">Project Manager</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="top-bar">
+                <h2 id="page-title">Dashboard</h2>
+                <div class="actions">
+                    <button class="btn-icon"><ion-icon name="notifications-outline"></ion-icon></button>
+                    <button class="btn-primary" id="global-add-btn">
+                        <ion-icon name="add"></ion-icon> New Item
+                    </button>
+                </div>
+            </header>
+
+            <div id="content-container" class="content-container">
+                <!-- Content will be injected here by JavaScript -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal Container -->
+    <div id="modal-overlay" class="modal-overlay hidden">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 id="modal-title">Modal Title</h3>
+                <button class="close-modal"><ion-icon name="close-outline"></ion-icon></button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Form content will be injected here -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn-text close-modal">Cancel</button>
+                <button class="btn-primary" id="modal-confirm-btn">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+        <ion-icon name="checkmark-circle"></ion-icon>
+        <span id="toast-message">Operation successful</span>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
